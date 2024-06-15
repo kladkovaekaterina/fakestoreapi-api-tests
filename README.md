@@ -68,6 +68,7 @@ ____
 
 Основная страница сборки:
 
+![image](https://github.com/kladkovaekaterina/fakestoreapi-api-tests/assets/93866007/601b3d66-bad7-47a8-afbd-eae5e8b7b5b7)
 
 
 #### <a name="Запуск сборки в Jenkins" style="color:black;"></a>Запуск сборки в Jenkins:</a>
@@ -83,6 +84,7 @@ ____
 
 После завершения прогона автотестов, в соответствии с настройками в <code>Jenkins</code>, бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с результатом прохождения автотестов.
 
+![image](https://github.com/kladkovaekaterina/fakestoreapi-api-tests/assets/93866007/366e1a1e-311a-4d5e-b784-4b585b117965)
 
 
 <a id="allure"></a>
@@ -91,4 +93,10 @@ ____
 После завершения прогона автотестов, в соответствии с настройками в <code>Jenkins</code>, сформируется Allure отчет. Для просмотра отчета необходимо в Jenkins в окне "Build History" нажать на значок Allure, расположенный справа от номера билда. 
 
 Пример основной страницы Allure отчёта: 
+
+![image](https://github.com/kladkovaekaterina/fakestoreapi-api-tests/assets/93866007/84f24632-fd48-44a3-8924-5437b8e96869)
+
+Пример страницы Behaviors Allure отчёта: 
+
+![image](https://github.com/kladkovaekaterina/fakestoreapi-api-tests/assets/93866007/d7da4f95-885d-4e0d-a9a3-480c945fbb16)
 
