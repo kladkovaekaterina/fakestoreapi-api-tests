@@ -65,19 +65,12 @@ ____
 ### <a name="Запуск тестов из Jenkins" style="color:black;"></a><img src="media/logos/jenkins-original.svg" width="20" height="20"/> Запуск тестов из [Jenkins](https://jenkins.autotests.cloud/job/25-KatherineMiers-fakestoreapi-api-tests/)</a>
 
 Для того, чтобы тесты можно было запускать независимо от кого-либо, в <code>Jenkins</code> реализована джоба для удаленного запуска.
+Чтобы запустить сборку в Jenkins необходимо c левой стороны страницы нажать на кнопку "Build Now".
 
 Основная страница сборки:
 
 ![image](https://github.com/kladkovaekaterina/fakestoreapi-api-tests/assets/93866007/601b3d66-bad7-47a8-afbd-eae5e8b7b5b7)
 
-
-#### <a name="Запуск сборки в Jenkins" style="color:black;"></a>Запуск сборки в Jenkins:</a>
-
-Чтобы запустить сборку в Jenkins необходимо:
-
-- С левой стороны страницы нажать на кнопку "Build with Parameters"
-- Выбрать параметры в соответствии с пуктом "Параметры сборки в Jenkins" описанным ниже
-- Нажать на кнопку Build
 
 <a id="telegram"></a>
 ### <a name="Уведомление в Telegram при помощи бота" style="color:black;"></a><img src="media/logos/telegram-original.svg" width="20" height="20"/> Уведомление в Telegram при помощи бота</a>
