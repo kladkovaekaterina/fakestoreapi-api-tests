@@ -1,0 +1,63 @@
+plugins {
+    id 'java-library'
+    id 'io.qameta.allure' version '2.11.2'
+    id 'io.freefair.lombok' version '6.0.0-m2'
+}
+
+def restAssuredVersion = "5.4.0",
+        junit5Version = "5.10.2",
+        allureVersion = "2.25.0",
+        appiumVersion = "8.3.0",
+        commonsVersion = "2.11.0",
+        assertjVersion = "3.25.3",
+        apacheCommonsVersion = "1.10.0",
+        fakerVersion = "1.0.2"
+
+allure {
+    report {
+        version.set(allureVersion)
+    }
+    adapter {
+        aspectjWeaver.set(true)
+        frameworks {
+            junit5 {
+                adapterVersion.set(allureVersion)
+            }
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(
+            "org.junit.jupiter:junit-jupiter:$junit5Version",
+            "io.rest-assured:rest-assured:$restAssuredVersion",
+            "io.rest-assured:json-schema-validator:$restAssuredVersion",
+            "io.appium:java-client:$appiumVersion",
+            "commons-io:commons-io:$commonsVersion",
+            "io.qameta.allure:allure-rest-assured:$allureVersion",
+            "org.assertj:assertj-core:$assertjVersion",
+            "org.apache.commons:commons-text:$apacheCommonsVersion",
+            "com.github.javafaker:javafaker:$fakerVersion",)
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+}
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+    systemProperties(System.getProperties())
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
+}
