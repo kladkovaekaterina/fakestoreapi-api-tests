@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'io.qameta.allure' version '2.11.2'
-    id 'io.freefair.lombok' version '6.0.0-m2'
+    id 'io.freefair.lombok' version '8.6'
 }
 
 def restAssuredVersion = "5.4.0",
@@ -9,6 +9,7 @@ def restAssuredVersion = "5.4.0",
         allureVersion = "2.25.0",
         appiumVersion = "8.3.0",
         commonsVersion = "2.11.0",
+        ownerVersion = "1.0.12",
         assertjVersion = "3.25.3",
         apacheCommonsVersion = "1.10.0",
         fakerVersion = "1.0.2"
@@ -38,6 +39,7 @@ dependencies {
             "io.rest-assured:json-schema-validator:$restAssuredVersion",
             "io.appium:java-client:$appiumVersion",
             "commons-io:commons-io:$commonsVersion",
+            "org.aeonbits.owner:owner:$ownerVersion",
             "io.qameta.allure:allure-rest-assured:$allureVersion",
             "org.assertj:assertj-core:$assertjVersion",
             "org.apache.commons:commons-text:$apacheCommonsVersion",

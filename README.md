@@ -81,7 +81,7 @@ ____
 
 
 <a id="allure"></a>
-### <a name="Allure отчет" style="color:black;"></a><img src="media/logos/allure-original.svg" width="20" height="20"/></a> Allure [отчет](https://jenkins.autotests.cloud/job/25-KatherineMiers-lundenilona-tests/5/allure/)</a>
+### <a name="Allure отчет" style="color:black;"></a><img src="media/logos/allure-original.svg" width="20" height="20"/></a> Allure [отчет](https://jenkins.autotests.cloud/job/25-KatherineMiers-lundenilona-tests/allure/)</a>
 
 После завершения прогона автотестов, в соответствии с настройками в <code>Jenkins</code>, сформируется Allure отчет. Для просмотра отчета необходимо в Jenkins в окне "Build History" нажать на значок Allure, расположенный справа от номера билда. 
 

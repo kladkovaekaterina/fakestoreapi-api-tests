@@ -6,7 +6,6 @@ import io.restassured.http.ContentType;
 
 import static api.specs.Specs.requestSpec;
 import static api.specs.Specs.responseSpec;
-import static api.tests.TestData.*;
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
