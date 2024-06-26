@@ -61,6 +61,11 @@ ____
 ./gradlew clean test
 ```
 
+Чтобы тесты корректно запустились локально, необходимо предварительно создать файл login.properties в директории src/test/resources/properties. 
+В файле необходимо указать:
+- login.username=*указать тестовый username*
+- login.userpass=*указать тестовый userpass*
+
 <a id="jenkins"></a>
 ### <a name="Запуск тестов из Jenkins" style="color:black;"></a><img src="media/logos/jenkins-original.svg" width="20" height="20"/> Запуск тестов из [Jenkins](https://jenkins.autotests.cloud/job/25-KatherineMiers-fakestoreapi-api-tests/)</a>
 

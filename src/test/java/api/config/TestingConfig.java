@@ -3,7 +3,7 @@ package api.config;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "classpath:testing.properties"
+        "classpath:properties/testing.properties"
 })
 public interface TestingConfig extends Config {
 
